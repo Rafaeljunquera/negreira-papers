@@ -963,7 +963,7 @@ nav.main{
    ============================================================ */
 .hero{
   position: relative;
-  padding: clamp(72px, 9vw, 130px) 0 clamp(56px, 7vw, 96px);
+  padding: clamp(48px, 4.5vw, 72px) 0 clamp(56px, 7vw, 96px);
   border-bottom: 1.5px solid var(--ink);
   background:
     linear-gradient(180deg, var(--paper-2) 0%, var(--paper) 60%);
@@ -1031,7 +1031,7 @@ nav.main{
 .hero h1{
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(72px, 13.5vw, 196px);
+  font-size: clamp(72px, 6.5vw, 120px);
   line-height: 0.94;
   letter-spacing: 0.002em;
   text-transform: uppercase;
@@ -2619,6 +2619,28 @@ footer .foot-mark{
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+footer .foot-producer{
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(20,19,13,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+footer .foot-producer-label{
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  font-weight: 600;
+}
+footer .foot-producer-logo{
+  height: 46px;
+  width: auto;
+  display: block;
 }
 
 /* ============================================================
@@ -4324,6 +4346,10 @@ body.accent-bold{
   <div style="margin-top:4px">
     <span class="lang-es">Presunción de inocencia · Sin condena firme · Causa en instrucción</span>
     <span class="lang-en">Presumption of innocence · No final conviction · Case under investigation</span>
+  </div>
+  <div class="foot-producer">
+    <span class="foot-producer-label"><span class="lang-es">Producido por</span><span class="lang-en">Produced by</span></span>
+    <img src="logo-spidercule.png" alt="Spidercule" class="foot-producer-logo" width="120" height="120">
   </div>
 </footer>
 
